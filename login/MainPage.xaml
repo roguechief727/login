@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="login.MainPage">
+
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="drhlogo.jpg"
+                HeightRequest="200"
+                WidthRequest="200"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Welcome!" FontSize="28" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Label Text="login your account" FontSize="18" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame HasShadow="True" HeightRequest="56" BorderColor="White" WidthRequest="56" CornerRadius="28" >
+                
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry Margin="20,0,0,0" Placeholder="User Name" Keyboard="Email" VerticalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+            
+        <StackLayout Orientation="Horizontal">
+            <Frame HasShadow="True" HeightRequest="56" BorderColor="White" WidthRequest="56" CornerRadius="28" >
+
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                <Entry Margin="20,0,0,0" Placeholder="Password" Keyboard="Email" IsPassword="True" VerticalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+
+        <Button Text="Sign in" CornerRadius="20" BackgroundColor="#9bdce4" TextColor="Black"/>
+
+        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+            <Label Text="Don't have account?"/>
+            <Label Text="sign Up here" TextColor="#50b3f2"/>
+        </StackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
